@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Hello there</title>
-</head>
-<body>
-	<h1>Hello coursera students</h1>
-</body>
+<html ng-app = "myFirstApp">
+  <head>
+  	<meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  	<title>Calculator</title>
+  </head>
+  <body>
+    <h1>Name</h1>
+  	<div ng-controller = "MyFirstController">
+    
+      name: <br>
+      {{sayMessage()}}
+     <div>
+      <button ng-click = "rotateEmoji()">Rotate Me:-)</button>
+      <br>
+      <img ng-src = "image/emoji_{{setemojiname}}.png">
+     </div>
+    
+  	</div>
+  </body>
+
 </html>
